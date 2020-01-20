@@ -4,15 +4,16 @@ namespace finance_management_backend.Models
 {
     public class TempData
     {
+        // Have been taken from here https://astronautweb.co/snippet/font-awesome/
         public static List<string> Icons = new List<string>
         {
-            "fas fa-glass",
+            //"fas fa-glass",
             "fas fa-music",
             "fas fa-search",
             "fas fa-envelope-o",
             "fas fa-heart",
             "fas fa-star",
-            "fas fa-star-o",
+            "far fa-star",
             "fas fa-user",
             "fas fa-film",
             "fas fa-th-large",

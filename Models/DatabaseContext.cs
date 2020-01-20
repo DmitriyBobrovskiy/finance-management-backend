@@ -20,6 +20,8 @@ namespace finance_management_backend.Models
         public DatabaseContext(DbContextOptions<DatabaseContext> options)
             : base(options)
         {
+            // TODO: for debug reasons only
+            //Database.EnsureDeleted();
             Database.Migrate();
         }
 
@@ -58,11 +60,11 @@ namespace finance_management_backend.Models
 
             var currencies = new List<Currency>
             {
-                new Currency { Title = "Рубли" },
-                new Currency { Title = "Доллары" },
-                new Currency { Title = "Евро" },
-                new Currency { Title = "Юани" },
-                new Currency { Title = "Гривны" },
+                new Currency { Title = "Рубли", Symbol = "₽" },
+                new Currency { Title = "Доллары", Symbol = "$" },
+                new Currency { Title = "Евро", Symbol = "€" },
+                new Currency { Title = "Юани", Symbol = "¥" },
+                new Currency { Title = "Гривны", Symbol = "₴" },
             };
             AddRange(currencies);
 
